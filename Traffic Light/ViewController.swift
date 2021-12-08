@@ -22,12 +22,9 @@ class ViewController: UIViewController {
         greenLightView.layer.cornerRadius = 77
     }
 
-
     @IBAction func startPressed() {
         
-        if (redLightView.alpha == 0.3) {
-            redLightView.alpha = 1
-        } else if (redLightView.alpha == 1) {
+        if (redLightView.alpha == 1) {
             redLightView.alpha = 0.3
             yellowLightView.alpha = 1
             startButton.setTitle("Next", for: .normal)
@@ -39,14 +36,10 @@ class ViewController: UIViewController {
             redLightView.alpha = 1
             greenLightView.alpha = 0.3
             startButton.setTitle("Next", for: .normal)
-
-   }
-        
-        
-
+            
+        }
         
     }
-    
     
 }
 
